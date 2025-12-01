@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+  <div id="todos"></div>
+  <button id="updateDiv">Update Div</button>
+  <br></br>
+  <hr></hr>
+  <div></div>
+  <input></input>
+</body>
+
+<script>
+  const div = document.createElement('div');
+  const p = document.createElement('p');
+  const todos = document.getElementById('todos');
+
+  div.innerHTML = 'tony' + Date.now();
+  p.innerHTML = 'last name: tony' + Date.now();
+
+  todos.appendChild(div);
+  todos.appendChild(p);
+  
+  document.getElementById('updateDiv').addEventListener('click', () => {
+    div.innerHTML = 'tony' + Date.now();
+    todos.appendChild(div);
+  })
+
+
+</script>
+</html>
