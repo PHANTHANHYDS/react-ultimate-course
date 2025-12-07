@@ -2,7 +2,7 @@ import Component from "./pages/fundamental/Component"
 import JSX from "./pages/fundamental/JSX"
 import Props from "./pages/fundamental/Props"
 import State from "./pages/fundamental/State"
-import TonyColorBox from "./pages/sampleApp/tony/TonyColorBox"
+import ColorBoxY from "./pages/sampleApp/y/ColorBox"
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Component />
       <br />
 
-      <TonyColorBox />
+      <ColorBoxY />
 
 
 
